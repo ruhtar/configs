@@ -1,0 +1,3 @@
+instalar o gnome tweaks
+instalar o extension manager
+colocar as pastas dentro das pastas .theme e .icons em Home
