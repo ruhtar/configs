@@ -1,0 +1,2 @@
+- Terminal: Warp
+- File search engine: Flow Launcher (with Everything)
