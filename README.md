@@ -1,2 +1,4 @@
 - Terminal: Warp
 - File search engine: Flow Launcher (with Everything)
+-   Notion: https://github.com/AminSallah/Flow.Launcher.Plugin.Notion
+-   AWS Toolkit: https://github.com/mjtimblin/Flow.Launcher.Plugin.AwsToolkit
