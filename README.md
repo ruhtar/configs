@@ -3,6 +3,9 @@
 ## Terminal
 - **Warp**  
 
+## Editor de texto
+- Micro
+
 ## Shell
 - Bat (Cat com syntax highlight)
 - fzf (Fuzzy finder)
