@@ -4,7 +4,7 @@
 - **Warp**  
 
 ## Ferramenta de Busca de Arquivos
-- **Flow Launcher** (integrado com Everything)  
+- **Flow Launcher**
 
 #### Plugins Essenciais do Flow Launcher
 - 🔗 [**Notion Plugin**](https://github.com/AminSallah/Flow.Launcher.Plugin.Notion)  
