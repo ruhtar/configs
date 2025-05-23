@@ -1,4 +1,12 @@
 
+upd-cfg(){
+	cd /d/PROGRAMACAO/configs/terminal/bash || return
+	cp -v ~/.bash_aliases ~/.bashrc ~/.profile ~/.bash_profile .
+	git add .
+	git commit -m "updating bash config files"
+	git push
+}
+
 
 # Abre o repositório atual do GitHub no navegador
 github() {
