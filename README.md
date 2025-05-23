@@ -3,6 +3,10 @@
 ## Terminal
 - **Warp**  
 
+## Shell
+- Bat (Cat com syntax highlight)
+- fzf (Fuzzy finder)
+- Zoxide (alias para apenas `z`)
 ## Ferramenta de Busca de Arquivos
 - **Flow Launcher**
 
