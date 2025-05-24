@@ -2,7 +2,7 @@
 upd-cfg(){
 	cd /d/PROGRAMACAO/configs || return
 	cp -v ~/.bash_aliases ~/.bashrc ~/.profile ~/.bash_profile ./terminal/bash
-	cp -v ~/.config.jsonc ./terminal/fastfetch
+	cp -v ~/.config/fastfetch/.config.jsonc ./terminal/fastfetch
 	git add .
 	git commit -m "updating bash config files"
 	git push
