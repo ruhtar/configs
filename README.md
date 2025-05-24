@@ -11,6 +11,7 @@
 - fzf (Fuzzy finder)
 - Zoxide (Adicionar ao rc do shell em questão um eval `eval "$(zoxide init bash)"`)
 - Eza (ls melhorado)
+- Fastfetch (Firula pura)
 
 ## Ferramenta de Busca de Arquivos
 - **Flow Launcher**
