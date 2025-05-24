@@ -2,6 +2,8 @@
 
 ## Terminal
 - **Warp**  
+- **WSL2**
+- - https://medium.com/@pallerlapranavdec27/install-wsl-on-any-local-disk-a-step-by-step-guide-e5b0d606e873
 
 ## Editor de texto
 - Micro

@@ -4,7 +4,7 @@ upd-cfg(){
 	cp -v ~/.bash_aliases ~/.bashrc ~/.profile ~/.bash_profile ./terminal/bash
 	cp -v ~/.config/fastfetch/config.jsonc ./terminal/fastfetch
 	git add .
-	git commit -m "updating bash config files"
+	git commit -m "updating all dotfiles config files"
 	git push
 }
 
