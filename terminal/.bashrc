@@ -1,7 +1,8 @@
 
 upd-cfg(){
 	cd /d/PROGRAMACAO/configs || return
-	cp -v ~/.bash_aliases ~/.bashrc ~/.profile ~/.bash_profile ./terminal
+	cp -v ~/.bash_aliases ~/.bashrc ~/.profile ~/.bash_profile ./terminal/bash
+	cp -v ~/.config.jsonc ./terminal/fastfetch
 	git add .
 	git commit -m "updating bash config files"
 	git push
@@ -62,5 +63,7 @@ if [ -f ~/.bash_aliases ]; then
 fi
 
 fastfetch --logo Windows
+
+eval "$(fzf --bash)"
 
 eval "$(zoxide init bash)"
