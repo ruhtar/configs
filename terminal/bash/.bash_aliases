@@ -1,7 +1,7 @@
 alias src="source ~/.bashrc"
 alias reload="source ~/.bashrc"
 alias cat="bat"
-alias cd="z"
+#alias cd="z"
 alias ll='ls -l'
 alias la='ls -Al'
 alias lt='ls -ltrh'

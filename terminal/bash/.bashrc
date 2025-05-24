@@ -57,51 +57,10 @@ github() {
   fi
 }
 
-
-# Abre o repositório atual do github 
-# github() {
-#   if ! git rev-parse --is-inside-work-tree > /dev/null 2>&1; then
-#     echo "Este diretório não é um repositório Git."
-#     return 1
-#   fi
-
-#   remote_url=$(git config --get remote.origin.url)
-
-#   if [ -z "$remote_url" ]; then
-#     echo "Nenhuma URL remota 'origin' encontrada."
-#     return 1
-#   fi
-
-#   # Remove token e converte para URL web padrão
-#   if [[ "$remote_url" =~ https://([^@]+)@github\.com/(.*)\.git ]]; then
-#     repo_path="${BASH_REMATCH[2]}"
-#     web_url="https://github.com/$repo_path"
-#   elif [[ "$remote_url" =~ git@github\.com:(.*)\.git ]]; then
-#     repo_path="${BASH_REMATCH[1]}"
-#     web_url="https://github.com/$repo_path"
-#   elif [[ "$remote_url" =~ https://github\.com/(.*)\.git ]]; then
-#     repo_path="${BASH_REMATCH[1]}"
-#     web_url="https://github.com/$repo_path"
-#   else
-#     echo "Formato de URL remoto não suportado: $remote_url"
-#     return 1
-#   fi
-
-#   echo "Abrindo $web_url ..."
-#   if [[ "$OSTYPE" == "msys"* || "$OSTYPE" == "cygwin"* ]]; then
-#     start "" "$web_url"
-#   elif command -v xdg-open > /dev/null; then
-#     xdg-open "$web_url"
-#   elif command -v open > /dev/null; then
-#     open "$web_url"
-#   else
-#     echo "Não foi possível abrir o navegador."
-#     return 1
-#   fi
-# }
-
 if [ -f ~/.bash_aliases ]; then
   source ~/.bash_aliases
 fi
+
+fastfetch --logo Windows
 
 eval "$(zoxide init bash)"
