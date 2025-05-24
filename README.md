@@ -10,6 +10,8 @@
 - Bat (Cat com syntax highlight)
 - fzf (Fuzzy finder)
 - Zoxide (Adicionar ao rc do shell em questão um eval `eval "$(zoxide init bash)"`)
+- Eza (ls melhorado)
+
 ## Ferramenta de Busca de Arquivos
 - **Flow Launcher**
 
