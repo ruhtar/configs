@@ -8,6 +8,10 @@
 ## Editor de texto
 - Micro
 
+## Windows customization
+- Yasb Reborn: Windows status bar (Instalar Jetbrains Mono Font)
+- Power Toys: Fancy Zones 
+
 ## Shell
 - Bat (Cat com syntax highlight)
 - fzf (Fuzzy finder)
