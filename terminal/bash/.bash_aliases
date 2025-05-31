@@ -13,6 +13,6 @@ alias aliases="micro ~/.bash_aliases"
 alias home="z /c/Users/Arthur"
 alias ls='eza -la --group-directories-first'
 
-alias explorer="explorer ."
-alias exp="explorer ."
-alias open="explorer ."
+#alias explorer="explorer ."
+#alias exp="explorer ."
+#alias open="explorer ."
