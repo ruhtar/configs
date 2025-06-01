@@ -13,3 +13,4 @@ alias ls='eza -la --group-directories-first'
 
 alias explorer="explorer ."
 alias exp="explorer ."
+alias y="yazi"

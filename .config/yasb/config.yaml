@@ -77,11 +77,11 @@ widgets:
     type: "yasb.active_window.ActiveWindowWidget"
     options:
       label: "{win[title]}"
-      label_alt: "[class_name='{win[class_name]}' exe='{win[process][name]}' hwnd={win[hwnd]}]"
-      label_no_window: ""
+      label_alt: " {win[title]}   {win[process][name]}   {win[class_name]}   {win[hwnd]}"
+      label_no_window: " Nenhuma janela"
       label_icon: true
       label_icon_size: 14
-      max_length: 35
+      max_length: 50
       max_length_ellipsis: "..."
       monitor_exclusive: true
 
