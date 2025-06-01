@@ -2,7 +2,8 @@
 upd-cfg(){
 	cd /d/PROGRAMACAO/configs || return
 	cp -v ~/.bash_aliases ~/.bashrc ~/.profile ~/.bash_profile ./terminal/bash
-	cp -v ~/.config/fastfetch/config.jsonc ./terminal/fastfetch
+	cp -v C:\Users\Arthur\.config\yasb\config.yaml C:\Users\Arthur\.config\yasb\styles.css  ./.config/yasb
+	cp -v ~/.config/fastfetch/config.jsonc ./terminal/fastfetch 
 	git add .
 	git commit -m "updating all dotfiles config files"
 	git push
