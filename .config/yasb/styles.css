@@ -1,40 +1,41 @@
 :root {
   /* Text and Labels */
-  --color-text: #ebdbb2;            /* texto claro */
-  --color-uptime: #d5c4a1;          /* texto secundário */
+  --color-text: #dcd6f7;            /* texto claro */
+  --color-uptime: #b8b3e9;          /* texto secundário */
 
   /* Base Backgrounds */
-  --color-background: #282828;      /* bg principal */
-  --color-power-popup-bg: rgba(40, 40, 40, 0.9);  /* popup semi-transparente */
-  --color-power-border: #1d2021;    /* borda escura */
-  --color-bar-bg: rgba(40, 40, 40, 0.8);  /* barra transparente */
+  --color-background: #1e1b2e;      /* bg principal azul escuro */
+  --color-power-popup-bg: rgba(30, 27, 46, 0.9);  /* popup semi-transparente */
+  --color-power-border: #151324;    /* borda escura */
+  --color-bar-bg: rgba(30, 27, 46, 0.8);  /* barra transparente */
 
   /* Icons */
-  --color-icon: #ebdbb2;            /* ícones padrão */
+  --color-icon: #dcd6f7;            /* ícones padrão */
 
   /* Window & Widgets Backgrounds */
-  --color-win-btn-bg: #3c3836;
-  --color-traffic-bg: #b9c07c;      /* verde */
-  --color-clock-bg: #fabd2f;        /* amarelo */
-  --color-volume-bg: #d88f20;       /* vermelho */
-  --color-weather-bg: #83a598;      /* azul acinzentado */
-  --color-active-window-bg: #d3869b;/* rosa escuro */
+  --color-win-btn-bg: #2b2540;
+  --color-traffic-bg: #6c7fd1;      /* azul médio */
+  --color-clock-bg: #8f7ada;        /* roxo claro */
+  --color-volume-bg: #a678de;       /* roxo */
+  --color-weather-bg: #5d73a7;      /* azul acinzentado */
+  --color-active-window-bg: #9b5de5;/* roxo vibrante */
 
   /* Widget Label Containers */
-  --color-widget-label-bg: #1d2021;
+  --color-widget-label-bg: #151324;
 
   /* Power Menu */
-  --color-power-menu-bg: #c76d69;
-  --color-power-icon: #d3869b;
+  --color-power-menu-bg: #7f4ca5;   /* roxo escuro */
+  --color-power-icon: #caa6ff;      /* lavanda */
 
   /* Media Controls */
-  --color-media-bg: rgba(235, 219, 178, 0.05);
-  --color-media-btn: rgba(235, 219, 178, 0.5);
-  --color-media-hover: #ebdbb2;
+  --color-media-bg: rgba(220, 214, 247, 0.05);
+  --color-media-btn: rgba(220, 214, 247, 0.5);
+  --color-media-hover: #dcd6f7;
 
   /* Labels */
-  --color-bar-label: #ebdbb2;
+  --color-bar-label: #dcd6f7;
 }
+
 
 * {
   font-size: 12px;
