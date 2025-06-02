@@ -30,6 +30,7 @@ bars:
       left:
         [
           "win_button",
+          "task_manager",
           "traffic",
           "media",
         ]
@@ -186,3 +187,11 @@ widgets:
       callbacks:
         on_left: 'toggle_label'
         on_right: 'exec cmd /c Taskmgr'
+  task_manager:
+    type: "yasb.custom.CustomWidget"
+    options:
+      label: "<span>\uf080</span>"  # Ícone de clipboard (ou substitua por outro FontAwesome)
+      label_alt: "Gerenciador de Tarefas"
+      class_name: "taskmgr-btn"
+      callbacks:
+        on_left: "exec cmd /c taskmgr"
