@@ -1,9 +1,17 @@
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	yazi "$@" --cwd-file="$tmp"
+	IFS= read -r -d '' cwd < "$tmp"
+	[ -n "$cwd" ] && [ "$cwd" != "$PWD" ] && builtin cd -- "$cwd"
+	rm -f -- "$tmp"
+}
 
 upd-cfg(){
 	cd /d/PROGRAMACAO/configs || return
 	cp -v ~/.bash_aliases ~/.bashrc ~/.profile ~/.bash_profile ./terminal/bash
 	cp -v C:/Users/Arthur/.config/yasb/config.yaml C:/Users/Arthur/.config/yasb/styles.css  ./.config/yasb
-	cp -v ~/.config/fastfetch/config.jsonc ./terminal/fastfetch 
+	cp -v ~/.config/fastfetch/config.jsonc ./terminal/fastfetch
+	cp -v C:\Users\Arthur\AppData\Roaming\yazi\config\keymap.toml C:\Users\Arthur\AppData\Roaming\yazi\config\theme.toml C:\Users\Arthur\AppData\Roaming\yazi\config\yazi.toml ./.config/yasi  
 	git add .
 	git commit -m "updating all dotfiles config files"
 	git push
