@@ -71,7 +71,7 @@ if [ -f ~/.bash_aliases ]; then
   source ~/.bash_aliases
 fi
 
-fastfetch --logo Windows
+fastfetch --logo Linux_small
 
 eval "$(fzf --bash)"
 
