@@ -1,24 +1,66 @@
+/* =====================
+   🎨 TEMA ATUAL: Catppuccin Mocha
+   ===================== */
+/* :root {
+  --font-main: "FiraCode Nerd Font", monospace;
+  --font-size: 12px;
+  --font-weight: 500;
+
+  --color-text: #cdd6f4;
+  --color-muted: #9399b2;
+
+  --color-bg: #1e1e2e;
+  --color-surface: #313244;
+  --color-widget-bg: var(--color-surface);
+  --color-widget-hover: rgba(205, 214, 244, 0.1);
+
+  --color-icon: #f9e2af;
+  --color-icon-muted: #585b70;
+  --color-widget-text: #1e1e2e;
+
+  --color-clock-bg: #fab387;
+  --color-volume-bg: #89b4fa;
+  --color-weather-bg: #a6e3a1;
+  --color-traffic-bg: #f38ba8;
+  --color-memory-bg: #cba6f7;
+  --color-cpu-bg: #f38ba8;
+  --color-active-bg: #94e2d5;
+  --color-win-bg: #45475a;
+  --color-taskmgr-bg: #585b70;
+
+  --color-border: rgba(205, 214, 244, 0.15);
+  --color-border-hover: rgba(249, 226, 175, 0.3);
+  --color-shadow-inset: rgba(0, 0, 0, 0.5);
+  --color-glow-win: rgba(249, 226, 175, 0.3);
+  --color-glow-hover: rgba(243, 139, 168, 0.3);
+  --color-text-shadow: rgba(0, 0, 0, 0.8);
+
+  --radius: 6px;
+  --padding-x: 6px;
+  --padding-y: 2px;
+} */
+
+/* =====================
+   🎨 TEMA Gruvbox 
+   ===================== */
+
 :root {
   --font-main: "FiraCode Nerd Font", monospace;
   --font-size: 12px;
   --font-weight: 500;
 
-  /* Texto */
   --color-text: #ebdbb2;
   --color-muted: #a89984;
 
-  /* Fundo base */
   --color-bg: #282828;
   --color-surface: #3c3836;
   --color-widget-bg: var(--color-surface);
   --color-widget-hover: rgba(235, 219, 178, 0.1);
 
-  /* Ícones */
   --color-icon: #fabd2f;
   --color-icon-muted: #928374;
-  --color-widget-text: #000000; 
+  --color-widget-text: #000000;
 
-  /* Cores por Widget */
   --color-clock-bg: #d79921;
   --color-volume-bg: #83a598;
   --color-weather-bg: #8ec07c;
@@ -29,7 +71,6 @@
   --color-win-bg: #504945;
   --color-taskmgr-bg: #665c54;
 
-  /* Bordas e sombras */
   --color-border: rgba(235, 219, 178, 0.15);
   --color-border-hover: rgba(250, 189, 47, 0.3);
   --color-shadow-inset: rgba(0, 0, 0, 0.5);
@@ -37,11 +78,12 @@
   --color-glow-hover: rgba(214, 93, 14, 0.3);
   --color-text-shadow: rgba(0, 0, 0, 0.8);
 
-  /* Layout */
   --radius: 6px;
   --padding-x: 6px;
   --padding-y: 2px;
 }
+
+
 
 
 * {

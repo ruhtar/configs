@@ -3,6 +3,16 @@
 ### **Desktop**
 ![image](https://github.com/user-attachments/assets/721078db-4d97-4d5c-a4ff-698c1f6d068d)
 
+## Setup
+
+- **Motherboard:** AM4 - Asus B450M Prime Gaming 90MB10H0-C1BAY0 (Micro ATX)  
+- **Processor:** AMD Ryzen 5 5600 6-Core Processor, 3501 MHz, 6 Cores, 12 Logical Processors  
+- **SSD:** Kingston SA400S37240G SATA SSD  
+- **Power Supply:** EVGA 700W Power Supply, 80 Plus White - 100-W1-0700-K  
+- **RAM:** 2x Husky Gaming Avalanche 16GB, 3200MHz, DDR4, CL19, Black - HGMF008  
+- **Case:** Rise Mode Glass 06X Frost Gaming Case, Mid Tower White - RM-WT-06X-FW
+
+
 ## **Terminal**
 - **Warp**  
 - **WSL2**  
