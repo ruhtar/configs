@@ -1,43 +1,40 @@
-# Configurações de Ambiente de Trabalho
+# **Windows Environment Settings**
 
-### Desktop
+### **Desktop**
 ![image](https://github.com/user-attachments/assets/721078db-4d97-4d5c-a4ff-698c1f6d068d)
 
-
-
-## Terminal
+## **Terminal**
 - **Warp**  
-- **WSL2**
-- - https://medium.com/@pallerlapranavdec27/install-wsl-on-any-local-disk-a-step-by-step-guide-e5b0d606e873
+- **WSL2**  
+  - [Install WSL on Any Local Disk – Step-by-Step Guide](https://medium.com/@pallerlapranavdec27/install-wsl-on-any-local-disk-a-step-by-step-guide-e5b0d606e873)
 
-## Editor de texto
+## **Text Editor**
 - Micro
 
-## Windows customization
-- Yasb Reborn: Windows status bar (Instalar FiraCode)
-- Windwawk: Task bar
-	Taskbar height and icon size
-	Windows 11 Start Menu Styler
-	Windows 11 Taskbar Styler
-- Yazi: File Manager
-- Power Toys: Fancy Zones
-  ![image](https://github.com/user-attachments/assets/f50f36c2-3294-48e5-a4e1-03c4411f92d5)
+## **Windows Customization**
+- **Yasb Reborn**: Windows status bar (Install FiraCode font)
+- **Windhawk**: Taskbar customization  
+  - Taskbar height and icon size  
+  - Windows 11 Start Menu Styler  
+  - Windows 11 Taskbar Styler
+- **Yazi**: File Manager
+- **PowerToys**: Fancy Zones  
+  ![image](https://github.com/user-attachments/assets/f50f36c2-3294-48e5-a4e1-03c4411f92d5)  
   ![image](https://github.com/user-attachments/assets/b70463e6-ad78-4661-8cc0-90154d97f04b)
 
+## **Shell Tools**
+- **Bat**: A `cat` clone with syntax highlighting
+- **fzf**: Fuzzy finder
+- **Zoxide**: Smarter `cd` command (Add `eval "$(zoxide init bash)"` to your shell's rc file)
+- **Eza**: Improved `ls` command
+- **Fastfetch**: Eye-candy system info display
 
-## Shell
-- Bat (Cat com syntax highlight)
-- fzf (Fuzzy finder)
-- Zoxide (Adicionar ao rc do shell em questão um eval `eval "$(zoxide init bash)"`)
-- Eza (ls melhorado)
-- Fastfetch (Firula pura)
-
-## Ferramenta de Busca de Arquivos
+## **File Search Tool**
 - **Flow Launcher**
 
-#### Plugins Essenciais do Flow Launcher
+#### **Essential Flow Launcher Plugins**
 - 🔗 [**Notion Plugin**](https://github.com/AminSallah/Flow.Launcher.Plugin.Notion)  
-  Permite buscar e abrir páginas do Notion diretamente pelo Flow Launcher.
+  Allows searching and opening Notion pages directly from Flow Launcher.
 
 - 🔗 [**AWS Toolkit Plugin**](https://github.com/mjtimblin/Flow.Launcher.Plugin.AwsToolkit)  
-  Ferramenta para interagir com serviços AWS usando o Flow Launcher.
+  Tool to interact with AWS services using Flow Launcher.
