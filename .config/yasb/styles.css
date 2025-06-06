@@ -1,380 +1,129 @@
 :root {
-  /* Text and Labels */
-  --color-text: #dcd6f7;            /* texto claro */
-  --color-uptime: #b8b3e9;          /* texto secundário */
+  --font-main: "FiraCode Nerd Font", monospace;
+  --font-size: 12px;
+  --font-weight: 500;
 
-  /* Base Backgrounds */
-  --color-background: #1e1b2e;      /* bg principal azul escuro */
-  --color-power-popup-bg: rgba(30, 27, 46, 0.9);  /* popup semi-transparente */
-  --color-power-border: #151324;    /* borda escura */
-  --color-bar-bg: rgba(30, 27, 46, 0.8);  /* barra transparente */
+  /* Texto */
+  --color-text: #ebdbb2;
+  --color-muted: #a89984;
 
-  /* Icons */
-  --color-icon: #dcd6f7;            /* ícones padrão */
+  /* Fundo base */
+  --color-bg: #282828;
+  --color-surface: #3c3836;
+  --color-widget-bg: var(--color-surface);
+  --color-widget-hover: rgba(235, 219, 178, 0.1);
 
-  /* Window & Widgets Backgrounds */
-  --color-win-btn-bg: #2b2540;
-  --color-traffic-bg: #6c7fd1;      /* azul médio */
-  --color-clock-bg: #8f7ada;        /* roxo claro */
-  --color-volume-bg: #a678de;       /* roxo */
-  --color-weather-bg: #5d73a7;      /* azul acinzentado */
-  --color-active-window-bg: #9b5de5;/* roxo vibrante */
+  /* Ícones */
+  --color-icon: #fabd2f;
+  --color-icon-muted: #928374;
+  --color-widget-text: #000000; 
 
-  /* Widget Label Containers */
-  --color-widget-label-bg: #151324;
+  /* Cores por Widget */
+  --color-clock-bg: #d79921;
+  --color-volume-bg: #83a598;
+  --color-weather-bg: #8ec07c;
+  --color-traffic-bg: #fe8019;
+  --color-memory-bg: #b16286;
+  --color-cpu-bg: #d65d0e;
+  --color-active-bg: #689d6a;
+  --color-win-bg: #504945;
+  --color-taskmgr-bg: #665c54;
 
-  /* Power Menu */
-  --color-power-menu-bg: #7f4ca5;   /* roxo escuro */
-  --color-power-icon: #caa6ff;      /* lavanda */
+  /* Bordas e sombras */
+  --color-border: rgba(235, 219, 178, 0.15);
+  --color-border-hover: rgba(250, 189, 47, 0.3);
+  --color-shadow-inset: rgba(0, 0, 0, 0.5);
+  --color-glow-win: rgba(250, 189, 47, 0.3);
+  --color-glow-hover: rgba(214, 93, 14, 0.3);
+  --color-text-shadow: rgba(0, 0, 0, 0.8);
 
-  /* Media Controls */
-  --color-media-bg: rgba(220, 214, 247, 0.05);
-  --color-media-btn: rgba(220, 214, 247, 0.5);
-  --color-media-hover: #dcd6f7;
-
-  /* Labels */
-  --color-bar-label: #dcd6f7;
-
-  --color-cpu: #4fc3f7;          /* azul claro para ícone do CPU */
-  --color-text: #f5f5f5;         /* texto principal */
-  --color-surface: #2a2a40;      /* fundo do widget */
+  /* Layout */
+  --radius: 6px;
+  --padding-x: 6px;
+  --padding-y: 2px;
 }
 
 
 * {
-  font-size: 12px;
+  font-family: var(--font-main);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
   color: var(--color-text);
-  font-weight: 500;
-  font-family: "FiraCode Nerd Font";
-  margin: 0;
-  padding: 0;
+  box-sizing: border-box;
 }
 
+/* Bloco Geral */
 .widget {
-  padding: 0 8px;
-  margin: 0 4px;
-  border-radius: 6px;
-}
-.widget .icon {
-  font-size: 18px;
-}
-
-.win-btn {
-  background-color: var(--color-win-btn-bg);
-}
-.win-btn .icon {
-  color: var(--color-icon);
-}
-
-.traffic-widget {
-  background-color: var(--color-traffic-bg);
-  padding: 0;
-}
-.traffic-widget .icon {
-  color: var(--color-icon);
-  padding: 0 6px;
-}
-.traffic-widget .label {
-  background-color: var(--color-background);
-  margin: 1px;
-  border-radius: 6px;
-  padding: 0 6px;
-  color: var(--color-traffic-bg);
-}
-
-.clock-widget {
-  background-color: var(--color-clock-bg);
-  padding: 0;
-}
-.clock-widget .icon {
-  color: var(--color-icon);
-  padding: 0 6px;
-}
-.clock-widget .label {
-  background-color: var(--color-background);
-  color: var(--color-clock-bg);
-  padding: 0 6px;
-  margin: 1px;
-  border-radius: 6px;
-}
-
-.volume-widget {
-  background-color: var(--color-volume-bg);
-  padding: 0;
-}
-.volume-widget .icon {
-  color: var(--color-icon);
-  padding: 0 6px;
-}
-.volume-widget .label {
-  background-color: var(--color-background);
-  color: var(--color-volume-bg);
-  padding: 0 8px;
-  margin: 1px;
-  border-radius: 6px;
-}
-
-.weather-widget {
-  background-color: var(--color-weather-bg);
-  padding: 0;
-}
-.weather-widget .icon {
-  color: var(--color-icon);
-  padding: 0 6px;
-}
-.weather-widget .label {
-  background-color: var(--color-background);
-  color: var(--color-weather-bg);
-  padding: 0 6px;
-  margin: 1px;
-  border-radius: 6px;
-}
-
-.taskbar-widget {
-  background-color: var(--color-background);
-  padding: 0;
-}
-.taskbar-widget .app-icon {
-  padding: 0 8px;
-  border: none;
-  margin: 0;
-}
-
-.active-window-widget {
-  background-color: var(--color-active-window-bg);
-  padding: 0;
-}
-.active-window-widget .label {
-  color: var(--color-active-window-bg);
-  background-color: var(--color-background);
-  padding: 0 8px;
-  margin: 1px;
-  border-radius: 6px;
-}
-.active-window-widget .icon {
-  padding: 0 8px;
-  border: none;
-  margin: 0;
-  background-color: var(--color-active-window-bg);
-}
-
-/* POWER MENU POPUP */
-.power-menu-widget {
-  background-color: var(--color-power-menu-bg);
-}
-.power-menu-widget .label {
-  padding: 0 8px;
-  font-weight: bold;
-  font-size: 14px;
-}
-
-.uptime {
-  font-size: 14px;
-  margin-bottom: 10px;
-  color: var(--color-uptime);
-  font-weight: 600;
-}
-
-.power-menu-popup {
-  background-color: var(--color-power-popup-bg);
-  border-radius: 12px;
-}
-.power-menu-popup .button {
-  padding: 0;
-  width: 180px;
-  height: 230px;
-  border-radius: 8px;
-  background-color: var(--color-background);
-  border: 8px solid var(--color-power-border);
-  margin: 0;
-}
-.power-menu-popup .button.hover {
-  background-color: var(--color-power-border);
-}
-.power-menu-popup .button .label {
-  margin-bottom: 8px;
-  font-size: 16px;
-  font-weight: 500;
-}
-.power-menu-popup .button .icon {
-  font-size: 64px;
-  padding-top: 32px;
-  color: var(--color-power-icon);
-}
-.power-menu-popup .button.cancel .icon {
-  padding: 0;
-  margin: 0;
-}
-.power-menu-popup .button.cancel .label {
-  margin: 0;
-}
-.power-menu-popup .button.cancel {
-  height: 32px;
-  border-radius: 4px;
-  border: none;
-  background-color: var(--color-background);
-}
-.power-menu-popup .button.cancel:hover {
-  background-color: var(--color-power-border);
-}
-
-/* MEDIA WIDGET */
-.media-widget {
-  padding: 0 4px;
-  margin: 5px 0 5px 5px;
-  border-radius: 8px;
-  background-color: var(--color-media-bg);
   display: flex;
   align-items: center;
+  padding: var(--padding-y) var(--padding-x);
+  margin: 0 4px;
+  border-radius: var(--radius);
+  background-color: var(--color-widget-bg);
+  border: 1px solid var(--color-border);
+  box-shadow: inset 0 0 1px var(--color-shadow-inset);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
-.media-widget .btn {
-  color: var(--color-media-btn);
-  padding: 0 3px;
-  margin: 4px 0;
-  font-weight: 500;
-  font-family: "Segoe Fluent Icons";
+
+.widget:hover {
+  background-color: var(--color-widget-hover);
+  box-shadow: 0 0 4px var(--color-border-hover);
 }
-.media-widget .btn:hover {
-  color: var(--color-media-hover);
-}
-.media-widget .btn.play {
+
+/* Ícones */
+.widget .icon {
   font-size: 16px;
-}
-.media-widget .btn.disabled,
-.media-widget .btn.disabled:hover {
-  color: var(--color-media-btn);
-  font-size: 12px;
-  background-color: transparent;
+  margin-right: 4px;
+  color: var(--color-icon);
 }
 
-/* MAIN YASB BAR */
-.yasb-bar.dark {
-  background-color: var(--color-bar-bg);
-}
-.yasb-bar.dark .label {
-  color: var(--color-bar-label);
-}
-
-/* WIDGET GROUP */
-.container-left .container-right {
-  flex: 0 1 auto;
-}
-.container-center {
-  margin: 0 auto;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+/* Labels */
+.widget .label {
+  font-family: var(--font-main);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  color: var(--color-widget-text);
+  text-shadow: 1px 1px 2px var(--color-text-shadow);
   white-space: nowrap;
 }
 
-.taskmgr-btn {
-  font-size: 15px;
-  padding: 4px 10px;
-  color: #e0e0e0;
-  background-color: #1e1e1e;
-  border-radius: 6px;
-  box-shadow: inset 0 0 2px #000, 0 1px 2px rgba(0, 0, 0, 0.5);
+/* Widgets específicos */
+.clock-widget { background-color: var(--color-clock-bg); }
+.volume-widget { background-color: var(--color-volume-bg); }
+.weather-widget { background-color: var(--color-weather-bg); }
+.traffic-widget { background-color: var(--color-traffic-bg); }
+.memory-widget { background-color: var(--color-memory-bg); }
+.cpu-widget    { background-color: var(--color-cpu-bg); }
+.active-window-widget { background-color: var(--color-active-bg); }
+.bluetooth-widget     { background-color: var(--color-weather-bg); }
+
+/* Botões especiais */
+.widget.win-btn,
+.widget.taskmgr-btn {
+  background-color: var(--color-win-bg);
+  padding: 6px 10px;
+  border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.3s ease;
+  transition: background 0.2s, box-shadow 0.2s;
 }
 
-.taskmgr-btn:hover {
-  background-color: #333;
-  color: #ffd700;
-  box-shadow: 0 0 6px rgba(255, 215, 0, 0.4);
+.widget.win-btn:hover,
+.widget.taskmgr-btn:hover {
+  background-color: #3a2c60; /* opcional: criar var --color-btn-hover-bg */
+  box-shadow: 0 0 6px var(--color-glow-hover);
   cursor: pointer;
 }
 
-.taskmgr-btn span {
-  margin: 0 auto;
-  display: inline-block;
-  line-height: 1;
+.widget.win-btn {
+  box-shadow: 0 0 6px var(--color-glow-win);
 }
 
-.bluetooth-widget {
-  background-color: var(--color-weather-bg); /* Escolhi esse como base por contraste equilibrado */
-  padding: 0;
-  border-radius: 6px;
-  margin: 0 4px;
+.taskmgr-btn {
+  background-color: var(--color-taskmgr-bg);
+  color: var(--color-text);
 }
-
-.bluetooth-widget .icon {
-  color: var(--color-icon);
-  font-size: 18px;
-  padding: 0 6px;
-}
-
-.bluetooth-widget .label {
-  background-color: var(--color-background);
-  color: var(--color-weather-bg); /* Mesma cor do fundo da widget */
-  padding: 0 6px;
-  margin: 1px;
-  border-radius: 6px;
-}
-
-.memory-widget {
-  background-color: var(--color-volume-bg); /* Pode trocar por uma cor dedicada, se quiser */
-  padding: 0;
-  border-radius: 6px;
-  margin: 0 4px;
-  display: flex;
-  align-items: center;
-}
-
-.memory-widget .icon {
-  color: var(--color-icon);
-  font-size: 18px;
-  padding: 0 6px;
-}
-
-.memory-widget .label {
-  background-color: var(--color-background);
-  color: var(--color-volume-bg); /* Ou crie uma cor nova: --color-memory-bg */
-  padding: 0 6px;
-  margin: 1px;
-  border-radius: 6px;
-  font-weight: 500;
-}
-
-.memory-widget .label.alt {
-  font-style: italic;
-}
-
-/* Sombra de texto quando ativada */
-.memory-widget .label-shadow {
-  text-shadow: 1px 1px 3px black;
-}
-.cpu-widget {
-  background-color: var(--color-volume-bg); /* Mesmo fundo que o memory-widget */
-  padding: 0;
-  border-radius: 6px;
-  margin: 0 4px;
-  display: flex;
-  align-items: center;
-}
-
-.cpu-widget .icon {
-  color: var(--color-icon); /* Mesmo ícone do memory-widget */
-  font-size: 18px;
-  padding: 0 6px;
-}
-
-.cpu-widget .label {
-  background-color: var(--color-background); /* Mesmo fundo da label */
-  color: var(--color-volume-bg); /* Ou crie uma cor dedicada: --color-cpu-bg */
-  padding: 0 6px;
-  margin: 1px;
-  border-radius: 6px;
-  font-weight: 500;
-}
-
-.cpu-widget .label.alt {
-  font-style: italic;
-}
-
-/* Sombra de texto quando ativada */
-.cpu-widget .label-shadow {
-  text-shadow: 1px 1px 3px black;
+.taskmgr-btn:hover {
+  color: #ffd700; /* pode criar var --color-taskmgr-hover */
 }

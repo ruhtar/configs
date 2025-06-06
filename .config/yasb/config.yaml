@@ -36,8 +36,8 @@ bars:
           "cpu"
         ]
       center: [
-          # "active_window",
-          "media",
+          "active_window",
+          # "media",
           # "taskbar",
         ]
       right:
@@ -47,7 +47,7 @@ bars:
           "weather",
           "volume",
           "clock",
-          "power_menu",
+          # "power_menu",
         ]
 widgets:
 #MEDIA
@@ -218,7 +218,7 @@ widgets:
         on_left: "toggle_label"
         on_right: "exec cmd.exe /c start ms-settings:bluetooth"
       label_shadow:
-        enabled: true
+        enabled: false
         color: "black"
         radius: 3
         offset: [ 1, 1 ]
@@ -237,7 +237,7 @@ widgets:
         medium: 50
         high: 90
       label_shadow:
-        enabled: true
+        enabled: false
         color: "black"
         radius: 3
         offset: [ 1, 1 ]
@@ -261,7 +261,7 @@ widgets:
       callbacks:
         on_right: "exec cmd /c Taskmgr"
       label_shadow:
-        enabled: true
+        enabled: false
         color: "black"
         radius: 3
         offset: [ 1, 1 ]
