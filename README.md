@@ -14,6 +14,10 @@
 - Power Toys: Fancy Zones
   ![image](https://github.com/user-attachments/assets/f50f36c2-3294-48e5-a4e1-03c4411f92d5)
   ![image](https://github.com/user-attachments/assets/b70463e6-ad78-4661-8cc0-90154d97f04b)
+- Windwawk: Task bar
+	Taskbar height and icon size
+	Windows 11 Start Menu Styler
+	Windows 11 Taskbar Styler
 
 ## Shell
 - Bat (Cat com syntax highlight)
