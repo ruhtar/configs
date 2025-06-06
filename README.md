@@ -1,5 +1,10 @@
 # Configurações de Ambiente de Trabalho
 
+### Desktop
+![image](https://github.com/user-attachments/assets/721078db-4d97-4d5c-a4ff-698c1f6d068d)
+
+
+
 ## Terminal
 - **Warp**  
 - **WSL2**
