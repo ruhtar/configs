@@ -1,7 +1,7 @@
 # **Windows Environment Settings**
 
 ### **Desktop**
-![image](https://github.com/user-attachments/assets/721078db-4d97-4d5c-a4ff-698c1f6d068d)
+<img src="https://github.com/user-attachments/assets/721078db-4d97-4d5c-a4ff-698c1f6d068d" width="500" alt="Desktop Setup" />
 
 ## Setup
 
@@ -29,8 +29,9 @@
   - Windows 11 Taskbar Styler
 - **Yazi**: File Manager
 - **PowerToys**: Fancy Zones  
-  ![image](https://github.com/user-attachments/assets/f50f36c2-3294-48e5-a4e1-03c4411f92d5)  
-  ![image](https://github.com/user-attachments/assets/b70463e6-ad78-4661-8cc0-90154d97f04b)
+<img src="https://github.com/user-attachments/assets/f50f36c2-3294-48e5-a4e1-03c4411f92d5" width="500" alt="FancyZones layout example 1" />  
+<br>  
+<img src="https://github.com/user-attachments/assets/b70463e6-ad78-4661-8cc0-90154d97f04b" width="500" alt="FancyZones layout example 2" />
 
 ## **Shell Tools**
 - **Bat**: A `cat` clone with syntax highlighting
