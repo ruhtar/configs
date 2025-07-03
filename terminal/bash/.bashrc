@@ -4,6 +4,10 @@ function spotify(){
 	"F:\Softwares\Spotify-CLI\spotify_player.exe"
 }
 
+function code(){
+	echo "6c0a734a-da19-4808-9205-8d25d56fb378"
+}
+
 
 function y() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
