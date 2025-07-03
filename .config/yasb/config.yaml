@@ -45,7 +45,7 @@ bars:
         [
           "traffic",
           # "language",
-          "weather",
+          # "weather",
           "volume",
           "clock",
           # "power_menu",

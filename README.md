@@ -39,7 +39,8 @@
 - **Zoxide**: Smarter `cd` command (Add `eval "$(zoxide init bash)"` to your shell's rc file)
 - **Eza**: Improved `ls` command
 - **Fastfetch**: Eye-candy system info display
-
+- **Spotify Player**: A fast, easy to use, and configurable terminal music player.
+- - https://github.com/aome510/spotify-player
 ## **File Search Tool**
 - **Flow Launcher**
 

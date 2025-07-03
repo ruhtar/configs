@@ -1,5 +1,10 @@
 export PATH="/f/scripts:$PATH"
 
+function spotify(){
+	"F:\Softwares\Spotify-CLI\spotify_player.exe"
+}
+
+
 function y() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
 	yazi "$@" --cwd-file="$tmp"
