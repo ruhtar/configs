@@ -1,18 +1,24 @@
-export PATH="/f/scripts:$PATH"
+export PATH="/f/scripts:$PATH:/d/PROGRAMACAO/Projetos/offline-scheduler-go"
 
-spotify(){
+function spotify(){
 	"F:\Softwares\Spotify-CLI\spotify_player.exe"
 }
 
-code(){
+temp() {
+	temp=$(curl -s "wttr.in/Aracaju?format=%t")
+	echo "Temperatura atual em Aracaju (SE): $temp"
+}
+
+function codigo(){
 	echo "6c0a734a-da19-4808-9205-8d25d56fb378"
 }
 
-token() {
-  "F:/scripts shell/token.sh" | jq
-}
+                                                                                                                                                                 
+function token(){                                                                                                                                               
+   F:/scripts shell/token.sh | jq                                                                                                                              
+}   
 
-y() {
+function y() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
 	yazi "$@" --cwd-file="$tmp"
 	IFS= read -r -d '' cwd < "$tmp"
