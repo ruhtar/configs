@@ -28,6 +28,7 @@
   - Windows 11 Start Menu Styler  
   - Windows 11 Taskbar Styler
 - **Yazi**: File Manager
+- **Ear trumpet**: App for volume control
 - **PowerToys**: Fancy Zones  
 <img src="https://github.com/user-attachments/assets/f50f36c2-3294-48e5-a4e1-03c4411f92d5" width="500" alt="FancyZones layout example 1" />  
 <br>  
