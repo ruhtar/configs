@@ -36,7 +36,7 @@
 
 ## **Shell Tools**
 - **Bat**: A `cat` clone with syntax highlighting
-- **fzf**: Fuzzy finder
+- **fzf**: Fuzzy finder. Just as a dependency
 - **Zoxide**: Smarter `cd` command (Add `eval "$(zoxide init bash)"` to your shell's rc file)
 - **Eza**: Improved `ls` command
 - **Fastfetch**: Eye-candy system info display
