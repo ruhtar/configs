@@ -8,7 +8,7 @@ alias la='ls -Al'
 alias lt='ls -ltrh'
 alias bashrc="micro ~/.bashrc"
 alias aliases="micro ~/.bash_aliases"
-alias home="z /c/Users/Arthur"
+alias home='cd /c/Users/Arthur'
 alias ls='eza -la --group-directories-first'
 
 alias explorer="explorer ."
