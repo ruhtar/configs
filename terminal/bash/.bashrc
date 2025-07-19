@@ -1,8 +1,5 @@
-export PATH="/f/scripts:$PATH:/d/PROGRAMACAO/Projetos/offline-scheduler-go"
+export PATH="$PATH:/c/Users/Arthur/dev"
 
-function spotify(){
-	"F:\Softwares\Spotify-CLI\spotify_player.exe"
-}
 
 temp() {
 	temp=$(curl -s "wttr.in/Aracaju?format=%t")
@@ -13,25 +10,14 @@ function codigo(){
 	echo "6c0a734a-da19-4808-9205-8d25d56fb378"
 }
 
-                                                                                                                                                                 
-function token(){                                                                                                                                               
-   F:/scripts shell/token.sh | jq                                                                                                                              
-}   
-
-function y() {
-	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
-	yazi "$@" --cwd-file="$tmp"
-	IFS= read -r -d '' cwd < "$tmp"
-	[ -n "$cwd" ] && [ "$cwd" != "$PWD" ] && builtin cd -- "$cwd"
-	rm -f -- "$tmp"
-}
 
 upd-cfg(){
-	cd /d/PROGRAMACAO/configs || return
+	home #alias
+	cd dev/configs || return
 	cp -v ~/.bash_aliases ~/.bashrc ~/.profile ~/.bash_profile ./terminal/bash
-	cp -v C:/Users/Arthur/.config/yasb/config.yaml C:/Users/Arthur/.config/yasb/styles.css  ./.config/yasb
-	cp -v ~/.config/fastfetch/config.jsonc ./terminal/fastfetch
-	cp -v C:/Users/Arthur/AppData/Roaming/yazi/config/keymap.toml C:/Users/Arthur/AppData/Roaming/yazi/config/theme.toml C:/Users/Arthur/AppData/Roaming/yazi/config/yazi.toml  ./.config/yasi  
+	#cp -v C:/Users/Arthur/.config/yasb/config.yaml C:/Users/Arthur/.config/yasb/styles.css  ./.config/yasb
+	#cp -v ~/.config/fastfetch/config.jsonc ./terminal/fastfetch
+	#cp -v C:/Users/Arthur/AppData/Roaming/yazi/config/keymap.toml C:/Users/Arthur/AppData/Roaming/yazi/config/theme.toml C:/Users/Arthur/AppData/Roaming/yazi/config/yazi.toml  ./.config/yasi  
 	git add .
 	git commit -m "updating all dotfiles config files"
 	git push
@@ -91,8 +77,8 @@ if [ -f ~/.bash_aliases ]; then
   source ~/.bash_aliases
 fi
 
-fastfetch --logo Linux_small
+#fastfetch --logo Linux_small
 
-eval "$(fzf --bash)"
+#eval "$(fzf --bash)"
 
 eval "$(zoxide init bash)"

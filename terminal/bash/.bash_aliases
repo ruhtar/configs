@@ -14,3 +14,6 @@ alias ls='eza -la --group-directories-first'
 alias explorer="explorer ."
 alias exp="explorer ."
 alias yasb="z ~/.config/yasb"
+
+#alias micro='/c/Users/Arthur/dev/micro.exe'
+
