@@ -49,4 +49,49 @@ echo ""
 # Se não for Linux, tenta instalar via winget
 if [[ "$OS" != "Linux" ]]; then
     echo "🔍 Verificando disponibilidade do winget..."
-    if ! command -v winget &> /dev/nu
+    if ! command -v winget &> /dev/null; then
+        echo "❌ winget não está instalado. Instale o App Installer pela Microsoft Store e tente novamente."
+        exit 1
+    fi
+
+    echo "✅ winget encontrado!"
+    echo "📦 Iniciando instalação dos pacotes com winget..."
+
+    packages=(
+        "ajeetdsouza.zoxide" 
+        "sharkdp.bat"
+        "eza-community.eza"
+    )
+
+    for pkg in "${packages[@]}"; do
+        echo "📦 Instalando $pkg..."
+        winget install --id "$pkg" --silent --accept-package-agreements --accept-source-agreements \
+            && echo "✅ $pkg instalado com sucesso!" \
+            || echo "❌ Falha ao instalar $pkg"
+    done
+    echo ""
+else
+    echo "🔎 Detectando distribuição Linux para instalação de pacotes..."
+
+    if [ -f /etc/os-release ]; then
+        . /etc/os-release
+        DISTRO=$ID
+        echo "📛 Distribuição: $DISTRO"
+
+        if [[ "$DISTRO" == "ubuntu" || "$DISTRO" == "debian" ]]; then
+            echo "📦 Instalando pacotes via apt..."
+
+            sudo apt update
+            sudo apt install -y zoxide bat eza \
+                && echo "✅ Pacotes instalados com sucesso!" \
+                || echo "❌ Falha ao instalar pacotes via apt."
+        else
+            echo "⚠️  Distribuição Linux não suportada automaticamente. Instale os pacotes manualmente:"
+            echo "    sudo apt install zoxide bat eza"
+        fi
+    else
+        echo "⚠️  Não foi possível identificar a distribuição. Instale manualmente: zoxide, bat, eza."
+    fi
+fi
+
+echo "🎉 Instalação e configuração finalizadas com sucesso!"
