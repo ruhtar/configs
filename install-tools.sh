@@ -41,10 +41,6 @@ done
 echo "✅ Arquivos de configuração copiados com sucesso!"
 echo ""
 
-# Instala o micro (cross-platform)
-echo "📥 Baixando e instalando o editor micro..."
-curl -s https://getmic.ro | bash && echo "✅ micro instalado!" || echo "❌ Falha ao instalar o micro."
-echo ""
 
 # Se não for Linux, tenta instalar via winget
 if [[ "$OS" != "Linux" ]]; then
@@ -93,5 +89,13 @@ else
         echo "⚠️  Não foi possível identificar a distribuição. Instale manualmente: zoxide, bat, eza."
     fi
 fi
+
+
+# Instala o micro (cross-platform)
+cd "$DEST_DIR"
+echo "📥 Baixando e instalando o editor micro..."
+curl -s https://getmic.ro | bash && echo "✅ micro instalado!" || echo "❌ Falha ao instalar o micro."
+echo ""
+
 
 echo "🎉 Instalação e configuração finalizadas com sucesso!"
