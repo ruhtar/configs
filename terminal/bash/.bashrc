@@ -10,6 +10,31 @@ function codigo(){
 	echo "6c0a734a-da19-4808-9205-8d25d56fb378"
 }
 
+load-cfg() {
+    home # alias (ajuste se necessário)
+
+    cd ~/dev/configs || return
+
+    # Bash
+    cp -v ./terminal/bash/.bash_aliases ~/.bash_aliases
+    cp -v ./terminal/bash/.bashrc ~/.bashrc
+    cp -v ./terminal/bash/.profile ~/.profile
+    cp -v ./terminal/bash/.bash_profile ~/.bash_profile
+
+    # Yasb (descomentando caso vá usar)
+    # cp -v ./.config/yasb/config.yaml ~/.config/yasb/config.yaml
+    # cp -v ./.config/yasb/styles.css ~/.config/yasb/styles.css
+
+    # Fastfetch (descomentando caso vá usar)
+    # cp -v ./terminal/fastfetch/config.jsonc ~/.config/fastfetch/config.jsonc
+
+    # Yazi (Windows, adapte para Linux se necessário)
+    # cp -v ./.config/yazi/keymap.toml ~/AppData/Roaming/yazi/config/keymap.toml
+    # cp -v ./.config/yazi/theme.toml ~/AppData/Roaming/yazi/config/theme.toml
+
+    echo "Configurações carregadas do repositório para o sistema local."
+}
+
 
 upd-cfg(){
 	home #alias
