@@ -63,11 +63,11 @@ github() {
   fi
 
   # Extrai a URL sem credenciais e converte para o formato web do GitHub
-  if [[ "$remote_url" =~ ^https://([^@]+)@github\.com/(.*)\.git$ ]]; then
+  if [[ "$remote_url" =~ ^https://([^@]+)@github\.com/(.*)(\.git)?$ ]]; then
     repo_path="${BASH_REMATCH[2]}"
-  elif [[ "$remote_url" =~ ^git@github\.com:(.*)\.git$ ]]; then
+  elif [[ "$remote_url" =~ ^git@github\.com:(.*)(\.git)?$ ]]; then
     repo_path="${BASH_REMATCH[1]}"
-  elif [[ "$remote_url" =~ ^https://github\.com/(.*)\.git$ ]]; then
+  elif [[ "$remote_url" =~ ^https://github\.com/(.*)(\.git)?$ ]]; then
     repo_path="${BASH_REMATCH[1]}"
   else
     echo "❌ Formato de URL remoto não suportado: $remote_url"
