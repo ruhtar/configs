@@ -46,6 +46,7 @@ upd-cfg(){
 	git add .
 	git commit -m "updating all dotfiles config files"
 	git push
+	echo "Configurações atualizadas no repositório remoto."
 }
 
 
@@ -107,3 +108,8 @@ fi
 #eval "$(fzf --bash)"
 
 eval "$(zoxide init bash)"
+
+# Atalho para abrir projeto .NET no Rider
+rider() {
+    "/c/Program Files/JetBrains/JetBrains Rider 2025.1.4/bin/rider64.exe" "$(pwd)" &
+}
