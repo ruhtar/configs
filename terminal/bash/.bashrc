@@ -113,3 +113,8 @@ eval "$(zoxide init bash)"
 rider() {
     "/c/Program Files/JetBrains/JetBrains Rider 2025.1.4/bin/rider64.exe" "$(pwd)" &
 }
+
+# Atalho para abrir projeto .NET no Rider
+rider() {
+    "/c/Program Files/JetBrains/JetBrains Rider 2025.1.4/bin/rider64.exe" "$(pwd)" &
+}

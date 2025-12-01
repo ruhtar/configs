@@ -6,6 +6,7 @@ alias la='ls -Al'
 alias lt='ls -ltrh'
 alias bashrc="micro ~/.bashrc"
 alias aliases="micro ~/.bash_aliases"
+alias brave='"C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe" --remote-debugging-port=9222 &> /dev/null &  --single-argument https://brave.com &'
 
 # Alias dinâmico para o diretório home do usuário, compatível com Linux e Windows
 if [[ "$OSTYPE" == "linux-gnu"* ]]; then
@@ -15,7 +16,7 @@ elif [[ "$OSTYPE" == "msys"* || "$OSTYPE" == "win32" ]]; then
     alias home="cd /c/Users/$USER_WIN"
 fi
 
-alias ls='eza -la --group-directories-first'
+alias ls='eza --group-directories-first'
 
 alias explorer="explorer ."
 alias exp="explorer ."
