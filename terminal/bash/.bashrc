@@ -1,5 +1,5 @@
 export PATH="$PATH:/c/Users/Arthur/dev"
-
+export YAZI_FILE_ONE="/c/Program Files/Git/usr/bin/file.exe"
 
 temp() {
 	temp=$(curl -s "wttr.in/Aracaju?format=%t")
@@ -11,7 +11,7 @@ function codigo(){
 }
 
 load-cfg() {
-    home # alias (ajuste se necessário)
+    home # alias
 
     cd ~/dev/configs || return
 
@@ -38,7 +38,7 @@ load-cfg() {
 
 upd-cfg(){
 	home #alias
-	cd dev/configs || return
+	cd ~/dev/configs || return
 	cp -v ~/.bash_aliases ~/.bashrc ~/.profile ~/.bash_profile ./terminal/bash
 	#cp -v C:/Users/Arthur/.config/yasb/config.yaml C:/Users/Arthur/.config/yasb/styles.css  ./.config/yasb
 	#cp -v ~/.config/fastfetch/config.jsonc ./terminal/fastfetch
@@ -103,9 +103,9 @@ if [ -f ~/.bash_aliases ]; then
   source ~/.bash_aliases
 fi
 
-#fastfetch --logo Linux_small
+fastfetch --logo Linux_small
 
-#eval "$(fzf --bash)"
+eval "$(fzf --bash)"
 
 eval "$(zoxide init bash)"
 
