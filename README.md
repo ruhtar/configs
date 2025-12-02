@@ -14,10 +14,7 @@
 
 
 ## **Terminal**
-- **Warp**
-- **WezTerm**
-  - winget install wez.wezterm
-  - winget upgrade wez.wezterm  
+- **Warp** 
 - **WSL2**  
   - [Install WSL on Any Local Disk – Step-by-Step Guide](https://medium.com/@pallerlapranavdec27/install-wsl-on-any-local-disk-a-step-by-step-guide-e5b0d606e873)
 
